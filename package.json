@@ -1,0 +1,51 @@
+{
+	"name": "banano-unit-converter",
+	"version": "0.1.0",
+	"description": "Converts Banano amounts from one unit to another",
+	"author": "Stoyan Zhekov <zh@zhware.net>",
+	"source": "src/index.ts",
+	"types": "dist/index.d.ts",
+	"main": "dist/banano-unit-converter.js",
+	"umd:main": "dist/banano-address-validator.umd.js",
+	"module": "dist/banano-unit-converter.m.js",
+	"files": [
+		"src",
+		"dist"
+	],
+	"scripts": {
+		"test": "mocha",
+		"lint": "eslint src --ext .ts",
+		"build": "microbundle",
+		"dev": "microbundle watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/zh/banano-unit-converter.git"
+	},
+	"keywords": [
+		"banano",
+		"unit",
+		"converter",
+		"conversion",
+		"cryptocurrency"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/zh/banano-unit-converter/issues"
+	},
+	"homepage": "https://github.com/zh/banano-unit-converter",
+	"dependencies": {
+		"big.js": "^5.2.2"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^3.3.0",
+		"@typescript-eslint/parser": "^3.3.0",
+		"chai": "^4.2.0",
+		"eslint": "^7.2.0",
+		"eslint-config-airbnb-base": "^14.2.0",
+		"eslint-plugin-import": "^2.21.2",
+		"microbundle": "^0.12.1",
+		"mocha": "^8.0.1",
+		"typescript": "^3.9.5"
+	}
+}
